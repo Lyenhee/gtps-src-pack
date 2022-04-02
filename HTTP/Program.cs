@@ -3,8 +3,8 @@ A HTTP Server made with C#, based on Growbrew Proxy HTTP Server.
 */
 using System;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
+
+
 using System.Net;
 using System.Text;
 using System.Threading;
@@ -44,7 +44,7 @@ namespace HTTP
 
             while (!proc.StandardOutput.EndOfStream)
             {
-                Console.WriteLine(proc.StandardOutput.ReadLine());
+               .WriteLine(proc.StandardOutput.ReadLine());
             }
         }
         public const string guidFWPolicy2 = "{E2B3C97F-6AE1-41AC-817A-F6F92166D7DD}";
@@ -94,7 +94,7 @@ namespace HTTP
                         System.Diagnostics.Process proc = new System.Diagnostics.Process();
                         proc.StartInfo = procStartInfo;
                         proc.Start();
-                        Thread.Sleep(250);
+                        Thread.Sleep;
                     }
                     response.Close();
                 }
@@ -130,9 +130,8 @@ namespace HTTP
             }
         }
 
-        private static void Main(string[] args) => Program.StartHTTP(new string[1]
-        {
-      "http://*:80/"
+        private static void Main(string[] args) => Program.StartHTTP(new string[1
+
+
         });
     }
-}
